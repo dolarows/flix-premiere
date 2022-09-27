@@ -3,7 +3,7 @@ const List = ({ movies, minDuration }) => {
     <>
       {movies.map((movie) => (
         <div key={movie.id}>
-          {minDuration < movie.duration_seconds && movie.title}
+          <h3>{minDuration < movie.duration_seconds && movie.title}</h3>
         </div>
       ))}
     </>
